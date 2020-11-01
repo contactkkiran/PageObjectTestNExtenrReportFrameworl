@@ -17,6 +17,8 @@ public class BaseTest {
 
     @BeforeClass
     public void classLevelSetup() {
+    	// System Property for Chrome Driver   
+        System.setProperty("webdriver.chrome.driver","./chromedriver/chromedriver.exe");  
         driver = new ChromeDriver();
     }
 
